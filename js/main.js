@@ -55,7 +55,7 @@ app.factory('ComicBooks', function($http, $q) {
 	// For client side
 	var publicKey = '2ac5db3fa3e7c593eeb5ee35d7ca625d'
 	var baseUrl = 'http://gateway.marvel.com/v1/'
-	var limit = 1000
+	var limit = 50
 
 	var find = function() {
 		var def = $q.defer()
@@ -104,6 +104,6 @@ app.factory('ComicBooks', function($http, $q) {
 	return {
 		find: find,
 		findOne: findOne,
-		LoadMore: Loadmore
-	}
+		LoadMore: LoadMore
+	};
 })
