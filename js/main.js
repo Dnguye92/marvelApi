@@ -53,7 +53,7 @@ app.directive('popup', function() {
 
 app.factory('ComicBooks', function($http, $q) {
 	// For client side
-	var publicKey = '2438f2e2128f03b9736564a7f3d0112a'
+	var publicKey = '2ac5db3fa3e7c593eeb5ee35d7ca625d'
 	var baseUrl = 'http://gateway.marvel.com/v1/'
 	var limit = 1000
 
