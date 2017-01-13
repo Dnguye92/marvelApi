@@ -1,20 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @Dnguye92
- Watch 2
-  Star 13
- Fork 6 Rchristiani/comicbooks
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs
-Branch: master Find file Copy pathcomicbooks/style.css
-abd03c8  on Feb 5, 2014
-@Rchristiani Rchristiani Cleaned some thigns up a bit
-1 contributor
-RawBlameHistory     
-134 lines (126 sloc)  2.43 KB
 /* line 4, sass/style.scss */
 * {
   box-sizing: border-box;
@@ -148,5 +131,3 @@ a:hover {
   padding: 5px;
   background-color: rgba(255, 255, 255, 0.5);
 }
-Contact GitHub API Training Shop Blog About
-© 2017 GitHub, Inc. Terms Privacy Security Status Help

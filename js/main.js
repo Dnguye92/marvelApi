@@ -32,7 +32,7 @@ app.controller('singleCharacter', function($scope, $rootScope, $stateParams, Com
 			description - 'No description available'
 		}
 		$scope.description = description
-		$rootScrope.$broadcast('contentLoaded')
+		$rootScope.$broadcast('contentLoaded')
 	})
 })
 
