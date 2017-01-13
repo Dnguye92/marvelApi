@@ -56,11 +56,12 @@ a:hover {
 /* line 32, sass/style.scss */
 .character h3 {
   font-family: 'Speedy', Open Sans;
+  color: #EF1223;
   position: absolute;
   top: 0;
   left: 0;
   width: 80%;
-  background-color: #ffffff;
+  background-color: transparent;
   padding: 2%;
   margin: 0px;
 }
