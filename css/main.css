@@ -129,6 +129,7 @@ a:hover {
   right: -30px;
   top: 0px;
   background-color: #000000;
+  opacity: 1;
 }
 /* line 89, sass/style.scss */
 .popup .close:hover {
@@ -174,7 +175,7 @@ span {
 }
 
 .sidenav a {
-    padding: 8px 8px 8px 32px;
+    padding: 8px 8px 8px 38px;
     text-decoration: none;
     font-size: 25px;
     color: #818181;
@@ -213,5 +214,5 @@ span {
 #charSearch {
   font-family: 'Speedy', Open Sans;
   width: 75%;
-  margin: 15% auto 0 12%;
+  margin: 15% auto 0 11%;
 }
