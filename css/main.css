@@ -41,13 +41,14 @@ a:hover {
 /* line 24, sass/style.scss */
 .character {
   width: 20%;
+  z-index: 1;
   height: auto;
   padding-bottom: 20%;
   float: left;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  opacity: 0.5;
+  opacity: 0.7;
   -webkit-transition: opacity 0.5s ease;
   -moz-transition: opacity 0.5s ease;
   -o-transition: opacity 0.5s ease;
@@ -148,28 +149,57 @@ h1, p, a{
   font-family: 'Speedy', Open Sans;
 }
 
-/*PAGE LOADER*/
-.preload {
-  width: 100%;
-  height: 100%;
-  background: #333;
+/*SEARCH BOX*/
+span {
+  z-index: 1000;
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
+  font-family: 'Speedy', Open Sans;
+  padding-left: 1.7em;
+  padding-top: 1.5em;
+  font-size: 20px;
+
 }
 
-.logo {
-  width: 300px;
-  height: 70px;
-  margin: 150px auto 50px auto;
-  font-size: 50px;
-  text-shadow: -1px 2px 2px #000;
-  text-align: center;
-  color: #EF1223;
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
 }
 
-@keyframes fadeout {
-  from {opacity: 1;}
-  to {opacity: 0;}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
 }
