@@ -167,7 +167,7 @@ span {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #EF1223;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -180,6 +180,12 @@ span {
     color: #818181;
     display: block;
     transition: 0.3s
+}
+
+#navHeading {
+  display: block;
+  text-align: center;
+  font-family: 'Avenger', Open Sans;
 }
 
 .sidenav a:hover, .offcanvas a:focus{
@@ -202,4 +208,10 @@ span {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+#charSearch {
+  font-family: 'Speedy', Open Sans;
+  width: 75%;
+  margin: 15% auto 0 12%;
 }

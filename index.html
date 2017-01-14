@@ -10,6 +10,7 @@
 	<script type="text/javascript" src="js/pace.js"></script>
 	<script type="text/javascript" src="jquery/jquery-2.2.2.min.js"></script>
 	<!-- ANGULAR  -->
+	<script type="text/javascript" src="js/smooth-scroll.js"></script>
 	<script type="text/javascript" src="js/angular.min.js"></script>
 	<script type="text/javascript" src="js/angular-ui-router.min.js"></script>
 	<script type="text/javascript" src="js/ng-infinite-scroll.min.js"></script>
@@ -20,27 +21,28 @@
 	<link rel="stylesheet" href="css/main.css">
 	
 </head>
-<body ng-control="mainCtrl">
+<body ng-control="mainCtrl" id="top">
+	<div ></div>
 
 	<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
-  <a href="#">Services</a>
-  <a href="#">Clients</a>
-  <a href="#">Contact</a>
-</div>
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
+	  <h1 id="navHeading">Marvel Encyclopedia</h1>
+	  <input id="charSearch" class="form-control" placeholder="Search characters">
 
-  <span id="main" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+	  <a data-scroll href="#top">Back to top</a>
+	</div>
 
+  	<span id="main" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
 
 	<div ui-view infinite-scroll="more.load()" infinite-scroll-distance="0" infinite-scroll-disabled="more.busy" class="main-container"></div>
 	<div class="credit"><a href="http://marvel.com" target="_blank">Data provided by Marvel. © 2014 Marvel</a></div>
 
 	<script>
-		paceOptions = {
-		restartOnPushState: false
-	}
+		smoothScroll.init({
+			selector: '[data-scroll]',
+			callback: function (anchor, toggle) {}
+		})
 	</script>
 	<script src="js/main.js"></script>
 </body>
