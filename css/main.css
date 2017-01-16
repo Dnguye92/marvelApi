@@ -18,7 +18,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans';
+  font-family: 'Speedy', Open Sans;
 }
 
 /* line 15, sass/style.scss */
@@ -215,4 +215,8 @@ span {
   font-family: 'Speedy', Open Sans;
   width: 75%;
   margin: 15% auto 0 11%;
+}
+
+#labels {
+  padding: 5% 5% 5% 15%;
 }

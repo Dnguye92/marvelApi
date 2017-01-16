@@ -27,8 +27,17 @@
 	<div id="mySidenav" class="sidenav">
 	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-	  <h1 id="navHeading">Marvel Encyclopedia</h1>
-	  <input id="charSearch" class="form-control" placeholder="Search characters">
+	  <h2 id="navHeading">Marvel Encyclopedia</h2>
+		<input id="charSearch" ng-model="query" class="form-control" placeholder="Search characters">
+		  <!-- filters for character search -->
+		<div id="labels">
+			<label class="radio-inline">
+				<input type="radio" ng-model="direction" name="direction" checked> Ascending
+			</label>
+			<label class="radio-inline">
+				<input type="radio" ng-model="direction" name="direction" value="reverse"> Descending
+			</label>
+		</div>
 
 	  <a data-scroll href="#top">Back to top</a>
 	</div>
