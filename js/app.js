@@ -9,7 +9,7 @@ app.config(function($stateProvider) {
 	.state('index.single', {
 		url: '/:id',
 		controller: 'singleCharacter',
-		templateUrl: 'templates/characterPopup.html'
+		templateUrl: 'templates/characterPopUp.html'
 	})
 })
 

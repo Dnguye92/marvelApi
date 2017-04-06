@@ -18,7 +18,7 @@ html,
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Speedy', Open Sans;
+  font-family: 'Lato', sans-serif;
 }
 
 /* line 15, sass/style.scss */
@@ -56,7 +56,7 @@ a:hover {
 }
 /* line 32, sass/style.scss */
 .character h3 {
-  font-family: 'Speedy', Open Sans;
+  font-family: 'Lato', sans-serif;
   color: #EF1223;
   position: absolute;
   top: 0;
@@ -147,14 +147,14 @@ a:hover {
 }
 
 h1, p, a{
-  font-family: 'Speedy', Open Sans;
+  font-family: 'Lato', sans-serif;
 }
 
 /*SEARCH BOX*/
 span {
   z-index: 1000;
   position: fixed;
-  font-family: 'Speedy', Open Sans;
+  font-family: 'Lato', sans-serif;
   padding-left: 1.7em;
   padding-top: 1.5em;
   font-size: 20px;
@@ -186,7 +186,7 @@ span {
 #navHeading {
   display: block;
   text-align: center;
-  font-family: 'Avenger', Open Sans;
+  font-family: 'Lato', sans-serif;
 }
 
 .sidenav a:hover, .offcanvas a:focus{
@@ -212,7 +212,7 @@ span {
 }
 
 #charSearch {
-  font-family: 'Speedy', Open Sans;
+  font-family: 'Lato', sans-serif;
   width: 75%;
   margin: 15% auto 0 11%;
 }
